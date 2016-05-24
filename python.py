@@ -364,3 +364,31 @@ def double_list(x):
 # Don't forget to return your new list!
 
 print double_list(n)
+
+#================================================================
+#Iterating over a list in a function
+n = [3, 5, 7]
+
+def total(numbers):
+    result = 0
+    for i in range(len(numbers)):
+        result += numbers[i]
+    return result
+
+print total(n)
+
+
+#================================================================
+#Using a list of lists in a function
+
+n = [[1, 2, 3], [4, 5, 6, 7, 8, 9]]
+# Add your function here
+def flatten(lists):
+    results = []
+    for numbers in lists:
+        for item in numbers:
+           results.append(item)
+    return results
+
+
+print flatten(n)
