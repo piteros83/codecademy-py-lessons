@@ -532,3 +532,101 @@ while guesses_left > 0:
     guesses_left -= 1
 else:
     print "You lose!"	
+	
+#================================================================	
+#appending to list
+hobbies = []
+
+# Add your code below!
+for i in range(3):
+    hobby = raw_input("Type your hobby:")
+    hobbies.append(hobby)
+	
+#================================================================
+#printing words with for loop
+
+thing = "spam!"
+
+for c in thing:
+    print c
+
+word = "eggs!"
+
+# Your code here!
+for d in word:
+    print d
+
+#================================================================	
+#replacig characters using for loop
+phrase = "A bird in the hand..."
+
+# Add your for loop
+for char in phrase:
+    if char == "A" or char == "a":
+        print "X",
+    else:
+        print char,
+
+
+
+#Don't delete this print statement!
+print
+
+#looping thru dictionary
+#================================================================
+d = {'a': 'apple', 'b': 'berry', 'c': 'cherry'}
+
+for key in d:
+    # Your code here!
+    print key,d[key]
+	
+#================================================================	
+#counting as you go without knowing the indexes
+choices = ['pizza', 'pasta', 'salad', 'nachos']
+
+print 'Your choices are:'
+for index, item in enumerate(choices):
+    print (index+1), item
+
+#================================================================	
+#multiple lists zip
+list_a = [3, 9, 17, 15, 19]
+list_b = [2, 4, 8, 10, 30, 40, 50, 60, 70, 80, 90]
+
+for a, b in zip(list_a, list_b):
+    # Add your code here!
+    if a > b:
+        print a
+    else:
+        print b
+		
+#================================================================
+fruits = ['banana', 'apple', 'orange', 'tomato', 'pear', 'grape']
+
+print 'You have...'
+for f in fruits:
+    if f == 'tomato':
+        print 'A tomato is not a fruit!' # (It actually is.)
+    print 'A', f
+else:
+    print 'A fine selection of fruits!'
+	
+#================================================================
+#integer checker with .0 
+
+def is_int(x):
+    y = str(x)
+    if (type(x) == int) or ((y[len(y)-2:]) == ".0"):
+        return True
+    else:
+        return False	
+
+#================================================================		
+#digit sum
+
+def digit_sum(n):
+    m = str(n)
+    sum = 0
+    for dig in m:
+        sum += int(dig)
+    return sum   		
