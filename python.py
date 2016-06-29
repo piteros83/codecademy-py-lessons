@@ -630,3 +630,13 @@ def digit_sum(n):
     for dig in m:
         sum += int(dig)
     return sum   		
+	
+#================================================================	
+#factorial in python
+
+def factorial(x):
+    for i in reversed(range(x)):
+        if i == 0:
+            return x
+        else:
+            x *= int(i)
