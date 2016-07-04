@@ -640,3 +640,13 @@ def factorial(x):
             return x
         else:
             x *= int(i)
+
+#================================================================				
+#reversed text
+def reverse(text):
+    rev=""
+    for i in text:
+        rev=i+rev
+    return rev
+
+print reverse("Python!")
