@@ -650,3 +650,14 @@ def reverse(text):
     return rev
 
 print reverse("Python!")
+
+#================================================================	
+#anti vowel
+def anti_vowel(text):
+    avtext = ''
+    for c in text:
+        if c not in "aeiouAEIOU":
+            avtext += c
+    return avtext   
+
+print anti_vowel('my anti vowel text to transform')
